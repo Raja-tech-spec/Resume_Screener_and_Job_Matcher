@@ -1,0 +1,14 @@
+# File Download Links
+# Last updated: 2023-11-15
+
+1. Resume Embeddings (PKL):
+   - Direct download: https://drive.google.com/uc?export=download&id=19b4aUTQ1tuCGOqZNdlHYsrdeJGt3zpyd
+
+2. Sentence Transformer Model (PKL):
+   - Direct download: https://drive.google.com/uc?export=download&id=1RmkHyzQYGde-YaVN5K0-5RREj_zqI-YR
+
+# Notes:
+- Ensure you have Python installed to use these pickle files
+- For large files, consider using gdown in Python:
+  !pip install gdown
+  gdown.download("https://drive.google.com/uc?export=download&id=FILE_ID")
