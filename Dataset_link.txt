@@ -1,0 +1,34 @@
+# Dataset Download Links
+
+## Clean Resume Data (CSV)
+- File name: clean_resume_data.csv
+- Description: Processed resume data with standardized formatting
+- Direct download: https://drive.google.com/uc?export=download&id=1yGnpB8nJcMNRSeNIeHkryFEutnOx5-6U
+
+## Jobs Dataset with Features (CSV)
+- File name: jobs_dataset_with_features.csv  
+- Description: Job postings dataset with extracted features
+- Direct download: https://drive.google.com/uc?export=download&id=17Hr_8eP1EQ_Is_Je1CmMLlDI1IYKopAs
+
+## Updated Resume Dataset (CSV)
+- File name: UpdatedResumeDataSet.csv
+- Description: Comprehensive collection of resume data
+- Direct download: https://drive.google.com/uc?export=download&id=1LMwF2LJYCCBBf1BATMKh2jdN9o_dATYi
+
+## Download Instructions
+
+### Using Python (recommended):
+```python
+import gdown
+import pandas as pd
+
+# Download function
+def download_csv(file_id, output_name):
+    url = f"https://drive.google.com/uc?export=download&id={file_id}"
+    gdown.download(url, output_name, quiet=False)
+    return pd.read_csv(output_name)
+
+# Download all datasets
+resume_data = download_csv("1yGnpB8nJcMNRSeNIeHkryFEutnOx5-6U", "clean_resume_data.csv")
+jobs_data = download_csv("17Hr_8eP1EQ_Is_Je1CmMLlDI1IYKopAs", "jobs_dataset_with_features.csv")
+updated_resumes = download_csv("1LMwF2LJYCCBBf1BATMKh2jdN9o_dATYi", "UpdatedResumeDataSet.csv")
